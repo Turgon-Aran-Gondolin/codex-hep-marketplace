@@ -1,0 +1,6 @@
+[submodule "plugins/latex-paper-writing"]
+	path = plugins/latex-paper-writing
+	url = https://github.com/Turgon-Aran-Gondolin/latex-paper-writing.git
+[submodule "plugins/hep-amplitude-computation"]
+	path = plugins/hep-amplitude-computation
+	url = https://github.com/Turgon-Aran-Gondolin/hep-amplitude-computation.git

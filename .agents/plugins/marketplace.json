@@ -1,0 +1,32 @@
+{
+  "name": "yingsheng-hep",
+  "interface": {
+    "displayName": "Yingsheng HEP"
+  },
+  "plugins": [
+    {
+      "name": "latex-paper-writing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/latex-paper-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "hep-amplitude-computation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hep-amplitude-computation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
