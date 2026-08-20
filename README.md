@@ -2,6 +2,19 @@
 
 Public Codex marketplace index for private high-energy-physics plugins. The repository exposes plugin names and pinned Git commit identifiers, but the plugin source remains in authenticated private submodules.
 
+## Domain ownership and orchestration integration
+
+Global `AGENTS.md`, project instructions, and custom agent TOMLs own PI orchestration, including delegation, agent and model selection, topology, and permissions. The plugins define none of that policy; they own only their domain invariants, artifact boundaries, acceptance gates, and cross-plugin handoffs.
+
+All marketplace routes participate:
+
+- `compute-hep-amplitudes` owns concrete amplitude-stage objects and their calculation manifests;
+- `latex-write-notes` owns explicit HEP technical or research notes;
+- `latex-write-prl` owns manuscripts explicitly targeting Physical Review Letters; and
+- `latex-write-regular-paper` owns every other HEP paper, including undecided venues.
+
+For combined work, complete and trace the amplitude object first, then hand its manifest and evidence artifacts to exactly one writing skill. No plugin supervises another, and each plugin remains independently usable when its counterpart is absent.
+
 ## Install on another Windows PC
 
 Authenticate GitHub, clone the private submodules, and register the resulting local marketplace:
